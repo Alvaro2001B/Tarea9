@@ -15,7 +15,7 @@ public class Electrodomestico {
 	static final char consumoF = 'F';
 	static final char consumoE = 'E';
 	static final char consumoD = 'D';
-	static final char consumoC = 'B';
+	static final char consumoC = 'C';
 	static final char consumoB = 'B';
 	static final char consumoA = 'A';
 	static final float precio =100;
@@ -76,9 +76,44 @@ public class Electrodomestico {
 			this.color=blanco;
 		}
 	}
+	
+	public float precioFinal() {
+		int precioSegunConsumo=0;
+		int precioSegunTamaño=0;
+		switch(consumoEnergetico){
+			case consumoF:
+				precioSegunConsumo=10;
+				break;
+			case consumoE:
+				precioSegunConsumo=30;
+				break;
+			case consumoD:
+				precioSegunConsumo=50;
+				break;
+			case consumoC:
+				precioSegunConsumo=60;
+				break;
+			case consumoB:
+				precioSegunConsumo=80;
+				break;
+			case consumoA:
+				precioSegunConsumo=100;
+				break;
+		}
+		if(peso>0 && peso<19) {
+			precioSegunTamaño=10;
+		}else if(peso>20 && peso<49){
+			precioSegunTamaño=50;
+		}else if(peso>50 && peso<79) {
+			precioSegunTamaño=80;
+		}else if(peso>80) {
+			precioSegunTamaño=100;
+		}
+		return precioBase+precioSegunTamaño+precioSegunConsumo;
+	}
 	/**
 	 * Metodo que devuelvo el precioBase.
-	 * @return Devuelve el precioBase
+	 * @return Devuelve el valor de precioBase
 	 */
 	public float getPrecioBase() {
 		return precioBase;
@@ -92,7 +127,7 @@ public class Electrodomestico {
 	}
 	/**
 	 * Metodo que devuelve el peso.
-	 * @return Devuelve el peso
+	 * @return Devuelve el valor de peso.
 	 */
 	public float getPeso() {
 		return peso;
@@ -106,7 +141,7 @@ public class Electrodomestico {
 	}
 	/**
 	 * Metodo que devulve el color.
-	 * @return Devuelve el color 
+	 * @return Devuelve el valor de color.
 	 */
 	public String getColor() {
 		return color;
@@ -120,7 +155,7 @@ public class Electrodomestico {
 	}
 	/**
 	 * Metodo que devuelve el consumo energetico.
-	 * @return Devuelve el consumo energetico 
+	 * @return Devuelve el valor de consumo energetico.
 	 */
 	public char getConsumoEnergetico() {
 		return consumoEnergetico;
