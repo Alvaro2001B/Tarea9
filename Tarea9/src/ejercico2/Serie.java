@@ -91,9 +91,9 @@ public class Serie implements Entregable{
 		Serie p=new Serie();
 		p=(Serie) a;
 		if((p.getNumTemporadas()<numTemporadas)) {
-			return "La serie "+ titulo+ " tiene mas temporadas.";
+			return titulo;
 		}
-		return "La serie "+ p.getTitulo()+ " tiene mas temporadas.";
+		return p.getTitulo();
 		
 	}
 

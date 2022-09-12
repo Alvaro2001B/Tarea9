@@ -100,9 +100,9 @@ public class Videojuegos implements Entregable{
 		Videojuegos p=new Videojuegos();
 		p=(Videojuegos)a;
 		if((p.getHorasEstimadas()<horasEstimadas)) {
-			return "El videojuego "+ horasEstimadas+ " tiene mas horas.";
+			return titulo;
 		}
-		return "El videojuego  "+ p.getTitulo()+ " tiene mas horas.";
+		return p.getTitulo();
 		
 	}
 }
