@@ -5,7 +5,7 @@ package ejercico2;
  * @author Alvaro Benitez Carmona
  *
  */
-public class Serie {
+public class Serie implements Entregable{
 
 
 	private String titulo, genero, creador;
@@ -68,6 +68,33 @@ public class Serie {
 	}
 	public void setNumTemporadas(int numTemporadas) {
 		this.numTemporadas = numTemporadas;
+	}
+	public String ToString() {
+		return "Classe Serie=>  Titulo: "+titulo+" Creador: "+creador+ " Numero de temporadas: "+ numTemporadas+" Genero: "+genero+ " Entregado :"+entregado+".\n";
+	}
+	@Override
+	public void entregar() {
+		entregado=true;
+		
+	}
+	@Override
+	public void devolver() {
+		entregado=false;
+		
+	}
+	@Override
+	public boolean isEntregado() {
+		return entregado;
+	}
+	
+	public String compareTo(Object a) {
+		Serie p=new Serie();
+		p=(Serie) a;
+		if((p.getNumTemporadas()<numTemporadas)) {
+			return "La serie "+ titulo+ " tiene mas temporadas.";
+		}
+		return "La serie "+ p.getTitulo()+ " tiene mas temporadas.";
+		
 	}
 
 
