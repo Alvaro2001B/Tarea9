@@ -50,70 +50,89 @@ public class Videojuegos implements Entregable {
 		this.genero = genero;
 		this.compañia = compañia;
 	}
+
 	/**
 	 * Metodo getTitulo
+	 * 
 	 * @return Devuelve el valor de titulo
 	 */
 	public String getTitulo() {
 		return titulo;
 	}
+
 	/**
 	 * Metodo que modifica el valor de titulo
+	 * 
 	 * @param titulo
 	 */
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
+
 	/**
 	 * Metodo getHorasEstimadas
+	 * 
 	 * @return Devuelve el valor de horasEstimadas
 	 */
 	public int getHorasEstimadas() {
 		return horasEstimadas;
 	}
+
 	/**
 	 * Metodo que modifica el valor de horasEstimadas
+	 * 
 	 * @param horasEstimadas
 	 */
 	public void setHorasEstimadas(int horasEstimadas) {
 		this.horasEstimadas = horasEstimadas;
 	}
+
 	/**
 	 * Metodo getGenero
+	 * 
 	 * @return Devuelve el valor de genero
 	 */
 	public String getGenero() {
 		return genero;
 	}
+
 	/**
-	 * Metodo que modifca el valor de genero 
+	 * Metodo que modifca el valor de genero
+	 * 
 	 * @param genero
 	 */
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
+
 	/**
 	 * Metodo getCompañia
+	 * 
 	 * @return Devuelve el valor de compañia
 	 */
 	public String getCompañia() {
 		return compañia;
 	}
+
 	/**
 	 * Metodo que modifica el valor de compañia
+	 * 
 	 * @param compañia
 	 */
 	public void setCompañia(String compañia) {
 		this.compañia = compañia;
 	}
+
 	/**
 	 * Metodo toString
-	 * @return Devuelve un String con todos los valores de los atributos de la clase 
+	 * 
+	 * @return Devuelve un String con todos los valores de los atributos de la clase
 	 */
 	public String ToString() {
 		return "Classe videojuegos=>  Titulo: " + titulo + " Compañia: " + compañia + " Horas estimadas: "
 				+ horasEstimadas + " Genero: " + genero + " Entregado :" + entregado + ".\n";
 	}
+
 	/**
 	 * Metodo que modifica el valor a true de entregado
 	 */
@@ -122,6 +141,7 @@ public class Videojuegos implements Entregable {
 		entregado = true;
 
 	}
+
 	/**
 	 * Metodo que modifca el valor a false de entregado
 	 */
@@ -130,6 +150,7 @@ public class Videojuegos implements Entregable {
 		entregado = false;
 
 	}
+
 	/**
 	 * Metodo que devuelve el valor de entregado
 	 */
@@ -137,10 +158,13 @@ public class Videojuegos implements Entregable {
 	public boolean isEntregado() {
 		return entregado;
 	}
+
 	/**
-	 * Metodo que comapara los valores de horasEstimadas entre dos objetos. Devuelve el valor de mas alto.
-	 *@param Object
-	 *@return Devuelve el titulo con las hora mas alta.
+	 * Metodo que comapara los valores de horasEstimadas entre dos objetos. Devuelve
+	 * el valor de mas alto.
+	 * 
+	 * @param Object
+	 * @return Devuelve el titulo con las hora mas alta.
 	 */
 	@Override
 	public String compareTo(Object a) {

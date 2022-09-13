@@ -50,70 +50,89 @@ public class Serie implements Entregable {
 		this.genero = genero;
 		this.creador = creador;
 	}
+
 	/**
 	 * Metodo getTitulo
+	 * 
 	 * @return Devuelve el valor de titulo
 	 */
 	public String getTitulo() {
 		return titulo;
 	}
+
 	/**
 	 * Metodo que modifca el valor de titulo
+	 * 
 	 * @param titulo
 	 */
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
+
 	/**
 	 * Metodo getGenero
+	 * 
 	 * @return Devuelve el valor de geneto
 	 */
 	public String getGenero() {
 		return genero;
 	}
+
 	/**
-	 * Metodo que modifica el valor de genero 
+	 * Metodo que modifica el valor de genero
+	 * 
 	 * @param genero
 	 */
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
+
 	/**
 	 * Metodo getCreadro
+	 * 
 	 * @return Metodo que devuelve el valor de creador
 	 */
 	public String getCreador() {
 		return creador;
 	}
+
 	/**
 	 * Metodo que modifica el valor de creador
+	 * 
 	 * @param creador
 	 */
 	public void setCreador(String creador) {
 		this.creador = creador;
 	}
+
 	/**
 	 * Metodoq getNumTemporadas
+	 * 
 	 * @return Devuelve el valor de numTemporadas.
 	 */
 	public int getNumTemporadas() {
 		return numTemporadas;
 	}
+
 	/**
 	 * Metodo que modifica el valor de numTemporadas.
+	 * 
 	 * @param numTemporadas
 	 */
 	public void setNumTemporadas(int numTemporadas) {
 		this.numTemporadas = numTemporadas;
 	}
+
 	/**
 	 * Metodo toString()
+	 * 
 	 * @return Devuelve un String con todos los valores de los atributos de la clase
 	 */
 	public String ToString() {
 		return "Classe Serie=>  Titulo: " + titulo + " Creador: " + creador + " Numero de temporadas: " + numTemporadas
 				+ " Genero: " + genero + " Entregado :" + entregado + ".\n";
 	}
+
 	/**
 	 * Metodo que modifica el valor a true de entregado
 	 */
@@ -122,6 +141,7 @@ public class Serie implements Entregable {
 		entregado = true;
 
 	}
+
 	/**
 	 * Metodo que modifca el valor a false de entregado
 	 */
@@ -130,6 +150,7 @@ public class Serie implements Entregable {
 		entregado = false;
 
 	}
+
 	/**
 	 * Metodo que devuelve el valor de entregado
 	 */
@@ -139,9 +160,11 @@ public class Serie implements Entregable {
 	}
 
 	/**
-	 * Metodo que comapara los valores de numTemporadas entre dos objetos. Devuelve el valor de mas alto.
-	 *@param Object
-	 *@return Devuelve el titulo de la serie com mas temporadas.
+	 * Metodo que comapara los valores de numTemporadas entre dos objetos. Devuelve
+	 * el valor de mas alto.
+	 * 
+	 * @param Object
+	 * @return Devuelve el titulo de la serie com mas temporadas.
 	 */
 	public String compareTo(Object a) {
 		Serie p = new Serie();
