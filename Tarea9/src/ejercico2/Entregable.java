@@ -1,6 +1,6 @@
 package ejercico2;
 /**
- * TAREA 9
+ * TAREA 9 EJERCICIO 2
  * 
  * @author Alvaro Benitez Carmona
  *

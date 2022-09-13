@@ -1,5 +1,10 @@
 package ejercicio1;
-
+/**
+ * TAREA 9 EJERCICIO 1
+ * 
+ * @author Alvaro Benitez Carmona
+ *
+ */
 public class Lavadora extends Electrodomestico {
 
 	private int carga;

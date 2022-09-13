@@ -1,7 +1,7 @@
 package ejercico2;
 import java.util.ArrayList;
 /**
- * TAREA 9 EJERCICIO
+ * TAREA 9 EJERCICIO 2
  * 
  * @author Alvaro Benitez Carmona
  *
